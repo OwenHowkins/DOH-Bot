@@ -1,6 +1,7 @@
 const { Client, Partials, Collection, Events } = require('discord.js');
 const { LoadEvents } = require('./structure/handlers/events');
 const { ServiceLogger } = require('./structure/classes/logger');
+
 const client = new Client({
     intents: [3276799],
     partials: [
@@ -19,6 +20,11 @@ global.client = client;
 global.env = process.env;
 global.commands = new Collection();
 global.events = new Collection();
+
+global.config = {
+    emojis: require("./configs/emojis.json"),
+    variables: require("./configs/variables.json")
+}
 
 LoadEvents(client);
 
