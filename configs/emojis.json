@@ -1,5 +1,5 @@
 {
-    "connection_good": "🟢",
-    "connection_ok": "🟡",
-    "connection_bad": "🔴"
+    "connection_good": "<:status_green:1279779551034998835>",
+    "connection_ok": "<:status_yellow:1279779433426714665>",
+    "connection_bad": "<:status_red:1279779000717152328>"
 }
